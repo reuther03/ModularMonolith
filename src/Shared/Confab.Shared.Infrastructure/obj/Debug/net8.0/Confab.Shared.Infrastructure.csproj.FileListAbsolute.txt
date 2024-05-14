@@ -1,0 +1,15 @@
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net8.0\Confab.Shared.Infrastructure.deps.json
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net8.0\Confab.Shared.Infrastructure.dll
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net8.0\Confab.Shared.Infrastructure.pdb
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net8.0\Confab.Shared.Abstractions.dll
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\bin\Debug\net8.0\Confab.Shared.Abstractions.pdb
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.Shared.Infrastructure.csproj.AssemblyReference.cache
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.Shared.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.Shared.Infrastructure.AssemblyInfoInputs.cache
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.Shared.Infrastructure.AssemblyInfo.cs
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.Shared.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.S.1D6D423F.Up2Date
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.Shared.Infrastructure.dll
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\refint\Confab.Shared.Infrastructure.dll
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.Shared.Infrastructure.pdb
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\ref\Confab.Shared.Infrastructure.dll

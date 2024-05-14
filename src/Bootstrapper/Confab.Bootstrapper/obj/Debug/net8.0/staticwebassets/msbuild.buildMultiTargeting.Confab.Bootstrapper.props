@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Confab.Bootstrapper.props" />
+</Project>

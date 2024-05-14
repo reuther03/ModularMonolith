@@ -1,0 +1,6 @@
+@Confab.Bootstrapper_HostAddress = http://localhost:5271
+
+GET {{Confab.Bootstrapper_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

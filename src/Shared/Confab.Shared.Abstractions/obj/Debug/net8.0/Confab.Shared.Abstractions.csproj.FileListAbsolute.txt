@@ -1,0 +1,11 @@
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\bin\Debug\net8.0\Confab.Shared.Abstractions.deps.json
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\bin\Debug\net8.0\Confab.Shared.Abstractions.dll
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\bin\Debug\net8.0\Confab.Shared.Abstractions.pdb
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\Confab.Shared.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\Confab.Shared.Abstractions.AssemblyInfoInputs.cache
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\Confab.Shared.Abstractions.AssemblyInfo.cs
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\Confab.Shared.Abstractions.csproj.CoreCompileInputs.cache
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\Confab.Shared.Abstractions.dll
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\refint\Confab.Shared.Abstractions.dll
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\Confab.Shared.Abstractions.pdb
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\ref\Confab.Shared.Abstractions.dll

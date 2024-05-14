@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Confab.Shared.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Confab.Shared.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "Confab.Shared.Infrastructure.dll": {}
+        }
+      },
+      "Confab.Shared.Abstractions/1.0.0": {
+        "runtime": {
+          "Confab.Shared.Abstractions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Confab.Shared.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Confab.Shared.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
