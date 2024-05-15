@@ -1,11 +1,18 @@
-var builder = WebApplication.CreateBuilder(args);
+using Confab.Modules.Conferences.Api;
+using Confab.Shared.Infrastructure;
 
+var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
+
+
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
-var app = builder.Build();
+services.AddInfrastructure()
+    .AddConferences();
 
+
+var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
@@ -13,6 +20,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseInfrastructure();
+app.MapControllers();
 
 app.Run();

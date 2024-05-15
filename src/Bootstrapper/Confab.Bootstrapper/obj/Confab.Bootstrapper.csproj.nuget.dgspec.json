@@ -28,6 +28,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj"
+              },
               "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj": {
                 "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj"
               }
@@ -76,6 +79,124 @@
         }
       }
     },
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj",
+        "projectName": "Confab.Modules.Conferences.Api",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj",
+        "projectName": "Confab.Modules.Conferences.Core",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Abstractions\\Confab.Shared.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -111,6 +232,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -182,6 +313,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

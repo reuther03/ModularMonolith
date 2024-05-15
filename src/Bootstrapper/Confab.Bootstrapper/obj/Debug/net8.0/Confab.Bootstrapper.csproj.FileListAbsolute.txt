@@ -35,3 +35,9 @@ C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\obj\Debug\net8.0\r
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\obj\Debug\net8.0\Confab.Bootstrapper.pdb
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\obj\Debug\net8.0\Confab.Bootstrapper.genruntimeconfig.cache
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\obj\Debug\net8.0\ref\Confab.Bootstrapper.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\obj\Debug\net8.0\Confab.Bootstrapper.sourcelink.json
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Conferences.Api.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Conferences.Core.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Conferences.Api.pdb
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Conferences.Core.pdb

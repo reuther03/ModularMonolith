@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "duLDjITJ1g3NCy1pmu4MXD+7/aVLrHJNQGb2q/rYjiwdopdYEzgdeHiDS/6oqvuQq2sqd6GIu/ENqFAX6XNr6Q==",
+  "dgSpecHash": "GlhqH1Yk+UfzI69treNWlqSLej2xnkhl2QLZqQSEZdxMST18ePIclQoRina3oxd3RgaDYU/BjlZOJffIGPaXpw==",
   "success": true,
   "projectFilePath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Abstractions\\Confab.Shared.Abstractions.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

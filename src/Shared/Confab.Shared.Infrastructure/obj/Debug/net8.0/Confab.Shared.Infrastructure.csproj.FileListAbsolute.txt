@@ -13,3 +13,4 @@ C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.
 C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\refint\Confab.Shared.Infrastructure.dll
 C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.Shared.Infrastructure.pdb
 C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\ref\Confab.Shared.Infrastructure.dll
+C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Infrastructure\obj\Debug\net8.0\Confab.Shared.Infrastructure.sourcelink.json
