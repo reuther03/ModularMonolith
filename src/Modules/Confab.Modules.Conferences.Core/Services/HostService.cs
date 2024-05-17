@@ -1,5 +1,6 @@
 ﻿using Confab.Modules.Conferences.Core.DTO;
 using Confab.Modules.Conferences.Core.Entities;
+using Confab.Modules.Conferences.Core.Exceptions;
 using Confab.Modules.Conferences.Core.Repositories;
 
 namespace Confab.Modules.Conferences.Core.Services;
@@ -36,11 +37,25 @@ internal class HostService : IHostService
 
     public async Task UpdateAsync(HostDetailsDto dto)
     {
-        throw new NotImplementedException();
+        var host = await _hostRepository.GetAsync(dto.Id);
+        if (host is null)
+        {
+            throw new HostNotFoundException(dto.Id);
+        }
+
+        host.Name = dto.Name;
+        host.Description = dto.Description;
+        await _hostRepository.UpdateAsync(host);
     }
 
     public async Task DeleteAsync(Guid id)
     {
-        throw new NotImplementedException();
+        var host = await _hostRepository.GetAsync(id);
+        if (host is null)
+        {
+            throw new HostNotFoundException(id);
+        }
+
+        await _hostRepository.DeleteAsync(host);
     }
 }
