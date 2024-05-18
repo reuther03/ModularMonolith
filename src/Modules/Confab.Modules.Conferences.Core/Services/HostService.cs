@@ -1,6 +1,7 @@
 ﻿using Confab.Modules.Conferences.Core.DTO;
 using Confab.Modules.Conferences.Core.Entities;
 using Confab.Modules.Conferences.Core.Exceptions;
+using Confab.Modules.Conferences.Core.Policies;
 using Confab.Modules.Conferences.Core.Repositories;
 
 namespace Confab.Modules.Conferences.Core.Services;
@@ -8,10 +9,12 @@ namespace Confab.Modules.Conferences.Core.Services;
 internal class HostService : IHostService
 {
     private readonly IHostRepository _hostRepository;
+    private readonly IHostDeletionPolicy _hostDeletionPolicy;
 
-    public HostService(IHostRepository hostRepository)
+    public HostService(IHostRepository hostRepository, IHostDeletionPolicy hostDeletionPolicy)
     {
         _hostRepository = hostRepository;
+        _hostDeletionPolicy = hostDeletionPolicy;
     }
 
     public async Task AddAsync(HostDto dto)
@@ -27,12 +30,33 @@ internal class HostService : IHostService
 
     public async Task<HostDetailsDto> GetAsync(Guid id)
     {
-        throw new NotImplementedException();
+        var host = await _hostRepository.GetAsync(id);
+
+        if (host is null)
+        {
+            return null;
+        }
+        var dto = Map<HostDetailsDto>(host);
+        dto.Conferences = host.Conferences.Select(c => new ConferenceDto
+        {
+            Id = c.Id,
+            Name = c.Name,
+            HostId = c.HostId,
+            HostName = c.Host.Name,
+            Location = c.Location,
+            LogoUrl = c.LogoUrl,
+            ParticipantsLimit = c.ParticipantsLimit,
+            From = c.From,
+            To = c.To
+        }).ToList();
+
+        return dto;
     }
 
     public async Task<IReadOnlyList<HostDto>> BrowseAsync()
     {
-        throw new NotImplementedException();
+        var hosts = await _hostRepository.BrowseAsync();
+        return hosts.Select(Map<HostDto>).ToList();
     }
 
     public async Task UpdateAsync(HostDetailsDto dto)
@@ -56,6 +80,21 @@ internal class HostService : IHostService
             throw new HostNotFoundException(id);
         }
 
+        if (await _hostDeletionPolicy.CanDeleteAsync(host) is false)
+        {
+            throw new Exception("Host cannot be deleted.");
+        }
+
         await _hostRepository.DeleteAsync(host);
+    }
+
+    private static T Map<T> (Host host) where T : HostDto, new()
+    {
+        return new T
+        {
+            Id = host.Id,
+            Name = host.Name,
+            Description = host.Description
+        };
     }
 }

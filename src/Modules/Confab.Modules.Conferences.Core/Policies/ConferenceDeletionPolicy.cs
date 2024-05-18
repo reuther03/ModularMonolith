@@ -12,10 +12,10 @@ internal class ConferenceDeletionPolicy : IConferenceDeletionPolicy
         _clock = clock;
     }
 
-    public async Task<bool> CanDeleteAsync(Conference conference)
+    public Task<bool> CanDeleteAsync(Conference conference)
     {
         var canDelete = _clock.CurrentDate().Date.AddDays(7) < conference.From;
 
-        return canDelete;
+        return Task.FromResult(canDelete);
     }
 }
