@@ -2,7 +2,7 @@
 
 namespace Confab.Modules.Conferences.Core.Services;
 
-internal interface IConferenceService
+public interface IConferenceService
 {
     Task<ConferenceDetailsDto> GetAsync(Guid id);
     Task<IEnumerable<ConferenceDto>> BrowseAsync();
