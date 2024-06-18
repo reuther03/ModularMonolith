@@ -113,4 +113,19 @@ internal class ConferenceService : IConferenceService
 
         await _conferenceRepository.DeleteAsync(conference);
     }
+
+    private static T Map<T>(Conference conference) where T : ConferenceDto, new()
+    {
+        return new T
+        {
+            Id = conference.Id,
+            HostId = conference.HostId,
+            Name = conference.Name,
+            Location = conference.Location,
+            LogoUrl = conference.LogoUrl,
+            ParticipantsLimit = conference.ParticipantsLimit,
+            From = conference.From,
+            To = conference.To
+        };
+    }
 }
