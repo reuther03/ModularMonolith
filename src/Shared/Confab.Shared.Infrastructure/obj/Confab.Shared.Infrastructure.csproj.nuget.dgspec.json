@@ -108,6 +108,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Humanizer": {
+              "target": "Package",
+              "version": "[3.0.0-beta.54, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
