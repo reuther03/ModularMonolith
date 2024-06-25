@@ -2,11 +2,11 @@
 
 namespace Confab.Modules.Conferences.Core.Repositories;
 
-internal class HostRepository : IHostRepository
+internal class HostInMemoryRepository : IHostRepository
 {
     private readonly List<Host> _hosts = [];
 
-    public Task<Host> GetAsync(Guid id)
+    public Task<Host?> GetAsync(Guid id)
         => Task.FromResult(_hosts.SingleOrDefault(x => x.Id == id));
 
     public async Task<IReadOnlyList<Host>> BrowseAsync()

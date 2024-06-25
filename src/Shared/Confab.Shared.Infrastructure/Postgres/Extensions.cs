@@ -13,7 +13,7 @@ public static class Extensions
         return services;
     }
 
-    public static IServiceCollection AddPostgres<T>(this IServiceCollection services, string sectionName) where T : DbContext
+    public static IServiceCollection AddPostgres<T>(this IServiceCollection services) where T : DbContext
     {
         var options = services.GetOptions<PostgresOptions>("postgres");
         services.AddDbContext<T>(x => x.UseNpgsql(options.ConnectionString));

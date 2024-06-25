@@ -2,7 +2,7 @@
 
 namespace Confab.Modules.Conferences.Core.Repositories;
 
-internal class ConferenceRepository : IConferenceRepository
+internal class ConferenceInMemoryRepository : IConferenceRepository
 {
     private readonly List<Conference> _conferences = [];
 

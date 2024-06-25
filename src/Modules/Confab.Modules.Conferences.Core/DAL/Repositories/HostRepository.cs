@@ -13,25 +13,25 @@ internal class HostRepository : IHostRepository
         _context = context;
     }
 
-    public Task<Host> GetAsync(Guid id) => _context.Hosts.Include(x=> x.Conferences).SingleOrDefaultAsync(x => x.Id == id);
+    public Task<Host?> GetAsync(Guid id) => _context.Hosts.Include(x => x.Conferences).SingleOrDefaultAsync(x => x.Id == id);
 
-    public Task<IReadOnlyList<Host>> BrowseAsync()
+    public async Task<IReadOnlyList<Host>> BrowseAsync() => await _context.Hosts.ToListAsync();
+
+    public async Task AddAsync(Host host)
     {
-        throw new NotImplementedException();
+        await _context.Hosts.AddAsync(host);
+        await _context.SaveChangesAsync();
     }
 
-    public Task AddAsync(Host host)
+    public async Task UpdateAsync(Host host)
     {
-        throw new NotImplementedException();
+        _context.Hosts.Update(host);
+        await _context.SaveChangesAsync();
     }
 
-    public Task UpdateAsync(Host host)
+    public async Task DeleteAsync(Host host)
     {
-        throw new NotImplementedException();
-    }
-
-    public Task DeleteAsync(Host host)
-    {
-        throw new NotImplementedException();
+        _context.Hosts.Remove(host);
+        await _context.SaveChangesAsync();
     }
 }
