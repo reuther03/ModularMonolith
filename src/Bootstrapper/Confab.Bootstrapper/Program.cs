@@ -8,7 +8,8 @@ var services = builder.Services;
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
-services.AddInfrastructure()
+services
+    .AddInfrastructure()
     .AddConferences();
 
 

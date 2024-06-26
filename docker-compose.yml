@@ -1,0 +1,26 @@
+﻿version: '3.9'
+
+networks:
+  Confab.Network:
+    name: Confab.Network
+
+services:
+  confab.postgres:
+    image: postgres:latest
+    container_name: Confab.Postgres
+    hostname: Confab.Postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./.container/postgres:/var/lib/postgresql
+      - ./.container/postgres:/var/log/postgresql
+    command: -p 5432
+    networks:
+      - Confab.Network
+
+volumes:
+    postgres:
+      driver: local

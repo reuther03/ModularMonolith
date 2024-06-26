@@ -8,6 +8,7 @@ using Confab.Shared.Infrastructure.Postgres;
 using Microsoft.Extensions.DependencyInjection;
 
 [assembly: InternalsVisibleTo(assemblyName: "Confab.Modules.Conferences.Api")]
+
 namespace Confab.Modules.Conferences.Core;
 
 internal static class Extensions
@@ -17,7 +18,7 @@ internal static class Extensions
         services.AddPostgres<ConferencesDbContext>();
 
         // services.AddSingleton<IHostRepository, HostInMemoryRepository>();
-        services.AddSingleton<IHostRepository, HostRepository>();
+        services.AddScoped<IHostRepository, HostRepository>();
         services.AddSingleton<IHostDeletionPolicy, HostDeletionPolicy>();
         services.AddScoped<IHostService, HostService>();
 

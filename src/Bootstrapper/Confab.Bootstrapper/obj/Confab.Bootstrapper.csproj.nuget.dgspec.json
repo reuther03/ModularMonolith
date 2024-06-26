@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
-                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj"
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj"
               },
               "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj": {
                 "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj"
@@ -41,6 +41,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,7 +60,7 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0-preview.5.24306.3, )"
+              "version": "[8.0.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -85,14 +90,14 @@
         }
       }
     },
-    "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj",
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj",
         "projectName": "Confab.Modules.Conferences.Api",
-        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj",
         "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Api\\obj\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -109,8 +114,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj": {
-                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj"
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj"
               }
             }
           }
@@ -119,6 +124,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -144,14 +154,14 @@
         }
       }
     },
-    "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj": {
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj",
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj",
         "projectName": "Confab.Modules.Conferences.Core",
-        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Core\\Confab.Modules.Conferences.Core.csproj",
         "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Confab.Modules.Conferences.Core\\obj\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -178,6 +188,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -233,6 +248,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -302,6 +322,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -314,7 +339,7 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.0-preview.3, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [

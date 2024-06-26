@@ -4,10 +4,10 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Confab.Modules.Conferences.Core.DAL.Configurations;
 
-internal class ConferenceConfiguration : IEntityTypeConfiguration<Conference>
+internal class HostConfiguration : IEntityTypeConfiguration<Host>
 {
-    public void Configure(EntityTypeBuilder<Conference> builder)
+    public void Configure(EntityTypeBuilder<Host> builder)
     {
-        throw new NotImplementedException();
+
     }
 }

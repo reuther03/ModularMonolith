@@ -19,11 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Shared.Abstractions"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Shared.Infrastructure", "src\Shared\Confab.Shared.Infrastructure\Confab.Shared.Infrastructure.csproj", "{F9B2345B-47B0-412B-8410-9BC2FBC947A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Conferences.Api", "src\Modules\Confab.Modules.Conferences.Api\Confab.Modules.Conferences.Api.csproj", "{0CF18899-65D0-4E92-9580-26BFBC2AF3BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Conferences.Api", "src\Modules\Conferences\Confab.Modules.Conferences.Api\Confab.Modules.Conferences.Api.csproj", "{0CF18899-65D0-4E92-9580-26BFBC2AF3BC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conferences", "Conferences", "{DE453FDE-5622-4A4D-ABDD-33F7A8534BD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Conferences.Core", "src\Modules\Confab.Modules.Conferences.Core\Confab.Modules.Conferences.Core.csproj", "{263A49F8-859F-484E-9810-4C58F0652871}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Conferences.Core", "src\Modules\Conferences\Confab.Modules.Conferences.Core\Confab.Modules.Conferences.Core.csproj", "{263A49F8-859F-484E-9810-4C58F0652871}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

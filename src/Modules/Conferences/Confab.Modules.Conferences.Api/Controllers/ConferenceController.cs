@@ -1,4 +1,5 @@
-﻿using Confab.Modules.Conferences.Core.DTO;
+﻿
+using Confab.Modules.Conferences.Core.DTO;
 using Confab.Modules.Conferences.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
