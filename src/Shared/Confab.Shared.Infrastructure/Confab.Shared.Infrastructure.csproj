@@ -10,9 +10,7 @@
         <ProjectReference Include="..\Confab.Shared.Abstractions\Confab.Shared.Abstractions.csproj"/>
     </ItemGroup>
 
-    <ItemGroup>
-        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
-    </ItemGroup>
+
 
     <ItemGroup>
       <PackageReference Include="Humanizer" Version="3.0.0-beta.54" />

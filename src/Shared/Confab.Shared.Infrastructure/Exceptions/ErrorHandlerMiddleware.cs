@@ -1,5 +1,4 @@
 ﻿using System.Net;
-using Confab.Shared.Abstractions.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 

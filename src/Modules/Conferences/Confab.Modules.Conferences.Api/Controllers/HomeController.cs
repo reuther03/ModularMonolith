@@ -3,7 +3,7 @@
 namespace Confab.Modules.Conferences.Api.Controllers;
 
 [ApiController]
-[Route("conferences-module")]
+[Route(ConferencesModule.BasePath + "/[controller]")]
 internal class HomeController : ControllerBase
 {
     [HttpGet]

@@ -1,4 +1,3 @@
-using Confab.Modules.Conferences.Api;
 using Confab.Shared.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,9 +8,7 @@ services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
 services
-    .AddInfrastructure()
-    .AddConferences();
-
+    .AddInfrastructure();
 
 var app = builder.Build();
 
