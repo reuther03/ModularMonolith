@@ -17,12 +17,13 @@ internal static class Extensions
     {
         services.AddPostgres<ConferencesDbContext>();
 
-        // services.AddSingleton<IHostRepository, HostInMemoryRepository>();
+        //ERROR No route matches the supplied values. System.InvalidOperationException: No route matches the supplied values. ERROR
+        services.AddMvc(options => { options.SuppressAsyncSuffixInActionNames = false; });
+
         services.AddScoped<IHostRepository, HostRepository>();
         services.AddSingleton<IHostDeletionPolicy, HostDeletionPolicy>();
         services.AddScoped<IHostService, HostService>();
 
-        // services.AddSingleton<IConferenceRepository, ConferenceInMemoryRepository>();
         services.AddSingleton<IConferenceDeletionPolicy, ConferenceDeletionPolicy>();
         services.AddScoped<IConferenceRepository, ConferenceRepository>();
         services.AddScoped<IConferenceService, ConferenceService>();

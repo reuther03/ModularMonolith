@@ -17,6 +17,7 @@ internal static class Extensions
     {
         services.AddErrorHandler();
         services.AddSingleton<IClock, Clock>();
+        services.AddHostedService<AppInitializer>();
         services.AddControllers()
             .ConfigureApplicationPartManager(manager => { manager.FeatureProviders.Add(new InternalControllerFeatureProvider()); });
 

@@ -13,13 +13,6 @@ public class HostController : BaseController
         _hostService = hostService;
     }
 
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<HostDto>>> GetAsync()
-    {
-        var hosts = await _hostService.BrowseAsync();
-        return Ok(hosts);
-    }
-
     [HttpGet("{id:guid}")]
     public async Task<ActionResult<HostDto>> GetAsync(Guid id)
     {
@@ -27,11 +20,18 @@ public class HostController : BaseController
         return host is null ? NotFound() : Ok(host);
     }
 
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<HostDto>>> GetAsync()
+    {
+        var hosts = await _hostService.BrowseAsync();
+        return Ok(hosts);
+    }
+
     [HttpPost]
     public async Task<ActionResult> PostAsync(HostDto dto)
     {
         await _hostService.AddAsync(dto);
-        return CreatedAtAction(nameof(GetAsync), new {id = dto.Id}, null);
+        return CreatedAtAction(nameof(GetAsync), new { id = dto.Id }, null);
     }
 
     [HttpPut("{id:guid}")]
