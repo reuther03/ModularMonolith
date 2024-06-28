@@ -26,6 +26,7 @@ internal static class Extensions
 
     public static IApplicationBuilder UseInfrastructure(this IApplicationBuilder app)
     {
+        app.UseRouting();
         app.UseErrorHandler();
         return app;
     }

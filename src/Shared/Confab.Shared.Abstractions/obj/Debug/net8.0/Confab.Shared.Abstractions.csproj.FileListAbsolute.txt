@@ -10,4 +10,3 @@ C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\
 C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\Confab.Shared.Abstractions.pdb
 C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\ref\Confab.Shared.Abstractions.dll
 C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\Confab.Shared.Abstractions.sourcelink.json
-C:\Repos\ModularMonolith\src\Shared\Confab.Shared.Abstractions\obj\Debug\net8.0\Confab.Shared.Abstractions.csproj.AssemblyReference.cache
