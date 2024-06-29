@@ -1,9 +1,11 @@
 using Confab.Bootstrapper;
 using Confab.Shared.Infrastructure;
+using Confab.Shared.Infrastructure.Modules;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
 
+builder.ConfigureModules();
 
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
@@ -34,7 +36,6 @@ foreach (var module in modules)
 {
     module.Use(app);
 }
-
 
 app.MapControllers();
 

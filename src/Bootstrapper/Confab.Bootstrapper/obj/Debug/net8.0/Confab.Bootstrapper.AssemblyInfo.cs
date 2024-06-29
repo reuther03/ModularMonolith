@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Confab.Bootstrapper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c47c0a7c15a6f6c38c1ae88c3223a762f84357f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2dab2ee4105e448440a749f4f4811ff31a08a61")]
 [assembly: System.Reflection.AssemblyProductAttribute("Confab.Bootstrapper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Confab.Bootstrapper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

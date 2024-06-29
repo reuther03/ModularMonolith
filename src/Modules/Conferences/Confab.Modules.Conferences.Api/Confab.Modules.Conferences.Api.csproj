@@ -10,4 +10,14 @@
       <ProjectReference Include="..\Confab.Modules.Conferences.Core\Confab.Modules.Conferences.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="module.conferences.json" />
+      <Content Include="module.conferences.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+      <Content Update="module.conferences.development.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>
