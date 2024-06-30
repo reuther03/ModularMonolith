@@ -4,17 +4,18 @@ using Confab.Shared.Infrastructure.Modules;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
+var configuration = builder.Configuration;
 
 builder.ConfigureModules();
 
 services.AddEndpointsApiExplorer();
 services.AddSwaggerGen();
 
-var assemblies = ModuleLoader.LoadAssemblies();
+var assemblies = ModuleLoader.LoadAssemblies(configuration);
 var modules = ModuleLoader.LoadModules(assemblies);
 
 services
-    .AddInfrastructure();
+    .AddInfrastructure(assemblies, modules);
 
 foreach (var module in modules)
 {
