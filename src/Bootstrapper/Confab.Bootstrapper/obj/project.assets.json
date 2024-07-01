@@ -1623,6 +1623,33 @@
           "bin/placeholder/Confab.Modules.Conferences.Core.dll": {}
         }
       },
+      "Confab.Modules.Speakers.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Confab.Modules.Speakers.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Confab.Modules.Speakers.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Confab.Modules.Speakers.Api.dll": {}
+        }
+      },
+      "Confab.Modules.Speakers.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Confab.Shared.Abstractions": "1.0.0",
+          "Confab.Shared.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Confab.Modules.Speakers.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Confab.Modules.Speakers.Core.dll": {}
+        }
+      },
       "Confab.Shared.Abstractions/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4182,6 +4209,16 @@
       "path": "../../Modules/Conferences/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj",
       "msbuildProject": "../../Modules/Conferences/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj"
     },
+    "Confab.Modules.Speakers.Api/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Speakers/Confab.Modules.Speakers.Api/Confab.Modules.Speakers.Api.csproj",
+      "msbuildProject": "../../Modules/Speakers/Confab.Modules.Speakers.Api/Confab.Modules.Speakers.Api.csproj"
+    },
+    "Confab.Modules.Speakers.Core/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Speakers/Confab.Modules.Speakers.Core/Confab.Modules.Speakers.Core.csproj",
+      "msbuildProject": "../../Modules/Speakers/Confab.Modules.Speakers.Core/Confab.Modules.Speakers.Core.csproj"
+    },
     "Confab.Shared.Abstractions/1.0.0": {
       "type": "project",
       "path": "../../Shared/Confab.Shared.Abstractions/Confab.Shared.Abstractions.csproj",
@@ -4196,6 +4233,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Confab.Modules.Conferences.Api >= 1.0.0",
+      "Confab.Modules.Speakers.Api >= 1.0.0",
       "Confab.Shared.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
@@ -4231,6 +4269,9 @@
           "projectReferences": {
             "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
               "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj"
+            },
+            "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Api\\Confab.Modules.Speakers.Api.csproj": {
+              "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Api\\Confab.Modules.Speakers.Api.csproj"
             },
             "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj": {
               "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj"

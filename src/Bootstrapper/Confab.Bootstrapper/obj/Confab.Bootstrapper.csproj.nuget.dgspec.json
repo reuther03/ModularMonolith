@@ -31,6 +31,9 @@
               "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
                 "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj"
               },
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Api\\Confab.Modules.Speakers.Api.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Api\\Confab.Modules.Speakers.Api.csproj"
+              },
               "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj": {
                 "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj"
               }
@@ -168,6 +171,127 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Api\\Confab.Modules.Speakers.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Api\\Confab.Modules.Speakers.Api.csproj",
+        "projectName": "Confab.Modules.Speakers.Api",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Api\\Confab.Modules.Speakers.Api.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Core\\Confab.Modules.Speakers.Core.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Core\\Confab.Modules.Speakers.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Core\\Confab.Modules.Speakers.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Core\\Confab.Modules.Speakers.Core.csproj",
+        "projectName": "Confab.Modules.Speakers.Core",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Core\\Confab.Modules.Speakers.Core.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Speakers\\Confab.Modules.Speakers.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Abstractions\\Confab.Shared.Abstractions.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Abstractions\\Confab.Shared.Abstractions.csproj"
+              },
               "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj": {
                 "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj"
               }

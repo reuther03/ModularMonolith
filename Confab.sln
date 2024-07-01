@@ -25,6 +25,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conferences", "Conferences"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Conferences.Core", "src\Modules\Conferences\Confab.Modules.Conferences.Core\Confab.Modules.Conferences.Core.csproj", "{263A49F8-859F-484E-9810-4C58F0652871}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Speakers", "Speakers", "{4F8C8136-558B-4A07-88D5-9B1D3F11B9A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Speakers.Api", "src\Modules\Speakers\Confab.Modules.Speakers.Api\Confab.Modules.Speakers.Api.csproj", "{90DE4C83-579A-491D-AA04-8CD725676566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confab.Modules.Speakers.Core", "src\Modules\Speakers\Confab.Modules.Speakers.Core\Confab.Modules.Speakers.Core.csproj", "{A62722BA-FFC3-46CC-89AC-7ADD4459D017}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +60,14 @@ Global
 		{263A49F8-859F-484E-9810-4C58F0652871}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{263A49F8-859F-484E-9810-4C58F0652871}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{263A49F8-859F-484E-9810-4C58F0652871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DE4C83-579A-491D-AA04-8CD725676566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DE4C83-579A-491D-AA04-8CD725676566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DE4C83-579A-491D-AA04-8CD725676566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DE4C83-579A-491D-AA04-8CD725676566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A62722BA-FFC3-46CC-89AC-7ADD4459D017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A62722BA-FFC3-46CC-89AC-7ADD4459D017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A62722BA-FFC3-46CC-89AC-7ADD4459D017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A62722BA-FFC3-46CC-89AC-7ADD4459D017}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{47A95D17-0824-4940-A54E-028FFF8D3E70} = {4D988E45-28B4-41FC-8C4D-800149CC19CC}
@@ -65,5 +79,8 @@ Global
 		{DE453FDE-5622-4A4D-ABDD-33F7A8534BD8} = {F1106BE8-7E27-4F8D-B0EE-CC9C92133733}
 		{0CF18899-65D0-4E92-9580-26BFBC2AF3BC} = {DE453FDE-5622-4A4D-ABDD-33F7A8534BD8}
 		{263A49F8-859F-484E-9810-4C58F0652871} = {DE453FDE-5622-4A4D-ABDD-33F7A8534BD8}
+		{4F8C8136-558B-4A07-88D5-9B1D3F11B9A9} = {F1106BE8-7E27-4F8D-B0EE-CC9C92133733}
+		{90DE4C83-579A-491D-AA04-8CD725676566} = {4F8C8136-558B-4A07-88D5-9B1D3F11B9A9}
+		{A62722BA-FFC3-46CC-89AC-7ADD4459D017} = {4F8C8136-558B-4A07-88D5-9B1D3F11B9A9}
 	EndGlobalSection
 EndGlobal
