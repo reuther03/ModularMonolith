@@ -1,8 +1,10 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using Confab.Shared.Abstractions;
+using Confab.Shared.Abstractions.Auth;
 using Confab.Shared.Abstractions.Modules;
 using Confab.Shared.Infrastructure.Api;
+using Confab.Shared.Infrastructure.Auth;
 using Confab.Shared.Infrastructure.Exceptions;
 using Confab.Shared.Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
@@ -39,6 +41,7 @@ internal static class Extensions
         services.AddErrorHandler();
         services.AddSingleton<IClock, Clock>();
         services.AddHostedService<AppInitializer>();
+        services.AddAuth();
         services.AddControllers()
             .ConfigureApplicationPartManager(manager =>
             {
@@ -62,8 +65,11 @@ internal static class Extensions
 
     public static IApplicationBuilder UseInfrastructure(this IApplicationBuilder app)
     {
-        app.UseRouting();
         app.UseErrorHandler();
+        app.UseAuthentication();
+        app.UseRouting();
+        app.UseAuthorization();
+
         return app;
     }
 

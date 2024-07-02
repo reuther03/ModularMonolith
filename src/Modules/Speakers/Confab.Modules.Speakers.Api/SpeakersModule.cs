@@ -1,9 +1,6 @@
 ﻿using System.Collections.Generic;
 using Confab.Modules.Speakers.Core;
-using Confab.Modules.Speakers.Core.DTO;
-using Confab.Modules.Speakers.Core.Services;
 using Confab.Shared.Abstractions.Modules;
-using Confab.Shared.Infrastructure.Modules;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
