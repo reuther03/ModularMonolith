@@ -8,10 +8,10 @@ namespace Confab.Modules.Users.Api
 {
     internal class UsersModule : IModule
     {
-        public const string BasePath = "users-module";        
+        public const string BasePath = "users-module";
         public string Name { get; } = "Users";
         public string Path => BasePath;
-        
+
         public IEnumerable<string> Policies { get; } = new[]
         {
             "users"
@@ -21,7 +21,7 @@ namespace Confab.Modules.Users.Api
         {
             services.AddCore();
         }
-        
+
         public void Use(IApplicationBuilder app)
         {
         }

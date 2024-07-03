@@ -12,6 +12,11 @@ internal class ConferencesModule : IModule
     public string Name { get; } = "Conferences";
     public string Path  => BasePath;
 
+    public IEnumerable<string> Policies { get; } = new[]
+    {
+        "conferences", "hosts"
+    };
+
     public void Register(IServiceCollection services)
     {
         services.AddCore();

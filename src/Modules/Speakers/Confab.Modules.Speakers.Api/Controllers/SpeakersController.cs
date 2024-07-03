@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Confab.Modules.Speakers.Api.Controllers
 {
+    [Authorize(Policy = Policy)]
     internal class SpeakersController : BaseController
     {
         private const string Policy = "speakers";
@@ -27,14 +28,12 @@ namespace Confab.Modules.Speakers.Api.Controllers
         public async Task<ActionResult<IEnumerable<SpeakerDto>>> Get() => Ok(await _speakersService.BrowseAsync());
 
         [HttpPost]
-        [Authorize]
         public async Task<ActionResult> Post(SpeakerDto speaker)
         {
             await _speakersService.CreateAsync(speaker);
             return CreatedAtAction(nameof(Get), new {id = speaker.Id}, null);
         }
 
-        [Authorize]
         [HttpPut("{id:guid}")]
         public async Task<ActionResult> Put(SpeakerDto speaker, Guid id)
         {

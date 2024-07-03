@@ -4,7 +4,6 @@ using Confab.Modules.Users.Core.DAL.Repositories;
 using Confab.Modules.Users.Core.Entities;
 using Confab.Modules.Users.Core.Repositories;
 using Confab.Modules.Users.Core.Services;
-using Confab.Shared.Abstractions.Auth;
 using Confab.Shared.Infrastructure.Postgres;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;

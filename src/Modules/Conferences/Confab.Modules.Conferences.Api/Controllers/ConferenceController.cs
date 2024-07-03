@@ -1,12 +1,15 @@
 ﻿
 using Confab.Modules.Conferences.Core.DTO;
 using Confab.Modules.Conferences.Core.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Confab.Modules.Conferences.Api.Controllers;
 
+[Authorize(Policy = Policy)]
 public class ConferenceController : BaseController
 {
+    private const string Policy = "conferences";
     private readonly IConferenceService _conferenceService;
 
     public ConferenceController(IConferenceService conferenceService)
@@ -15,6 +18,7 @@ public class ConferenceController : BaseController
     }
 
     [HttpGet]
+    [AllowAnonymous]
     public async Task<ActionResult<IEnumerable<ConferenceDetailsDto>>> GetAsync()
     {
         var hosts = await _conferenceService.BrowseAsync();
@@ -22,6 +26,7 @@ public class ConferenceController : BaseController
     }
 
     [HttpGet("{id:guid}")]
+    [AllowAnonymous]
     public async Task<ActionResult<ConferenceDto>> GetAsync(Guid id)
     {
         var host = await _conferenceService.GetAsync(id);
