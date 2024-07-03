@@ -9,7 +9,6 @@ var configuration = builder.Configuration;
 builder.ConfigureModules();
 
 services.AddEndpointsApiExplorer();
-services.AddSwaggerGen();
 
 var assemblies = ModuleLoader.LoadAssemblies(configuration);
 var modules = ModuleLoader.LoadModules(assemblies);
@@ -24,13 +23,6 @@ foreach (var module in modules)
 
 
 var app = builder.Build();
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
 
 app.UseInfrastructure();
 foreach (var module in modules)
