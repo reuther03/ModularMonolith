@@ -5,6 +5,7 @@ using Confab.Shared.Abstractions.Modules;
 using Confab.Shared.Infrastructure.Api;
 using Confab.Shared.Infrastructure.Auth;
 using Confab.Shared.Infrastructure.Exceptions;
+using Confab.Shared.Infrastructure.Modules;
 using Confab.Shared.Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
@@ -56,6 +57,7 @@ internal static class Extensions
             swagger.SwaggerDoc("v1", new OpenApiInfo { Title = "Confab API", Version = "v1" });
         });
 
+        services.AddModuleInfo(modules);
         services.AddAuth(modules);
         services.AddErrorHandler();
         services.AddSingleton<IClock, Clock>();
