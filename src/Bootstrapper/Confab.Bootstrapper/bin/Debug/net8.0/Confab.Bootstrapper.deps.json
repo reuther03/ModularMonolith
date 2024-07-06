@@ -10,6 +10,7 @@
         "dependencies": {
           "Confab.Modules.Conferences.Api": "1.0.0",
           "Confab.Modules.Speakers.Api": "1.0.0",
+          "Confab.Modules.Tickets.Api": "1.0.0",
           "Confab.Modules.Users.Api": "1.0.0",
           "Confab.Shared.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.4",
@@ -1277,6 +1278,24 @@
           "Confab.Modules.Speakers.Core.dll": {}
         }
       },
+      "Confab.Modules.Tickets.Api/1.0.0": {
+        "dependencies": {
+          "Confab.Modules.Tickets.Core": "1.0.0",
+          "Confab.Shared.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "Confab.Modules.Tickets.Api.dll": {}
+        }
+      },
+      "Confab.Modules.Tickets.Core/1.0.0": {
+        "dependencies": {
+          "Confab.Shared.Abstractions": "1.0.0",
+          "Confab.Shared.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "Confab.Modules.Tickets.Core.dll": {}
+        }
+      },
       "Confab.Modules.Users.Api/1.0.0": {
         "dependencies": {
           "Confab.Modules.Users.Core": "1.0.0",
@@ -2122,6 +2141,16 @@
       "sha512": ""
     },
     "Confab.Modules.Speakers.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Confab.Modules.Tickets.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Confab.Modules.Tickets.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

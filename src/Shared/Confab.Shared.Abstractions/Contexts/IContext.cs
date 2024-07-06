@@ -1,6 +1,4 @@
-﻿using System.Security.Principal;
-
-namespace Confab.Shared.Abstractions.Contexts;
+﻿namespace Confab.Shared.Abstractions.Contexts;
 
 public interface IContext
 {

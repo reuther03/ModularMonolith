@@ -189,3 +189,9 @@ C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\C
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Users.Api.pdb
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Users.Core.pdb
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Swashbuckle.AspNetCore.ReDoc.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\module.tickets.development.json
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\module.tickets.json
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Tickets.Api.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Tickets.Core.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Tickets.Api.pdb
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Tickets.Core.pdb

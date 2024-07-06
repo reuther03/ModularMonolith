@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Confab.Shared.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46ffb86eec3b2687300922c252e0185f41a66412")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c7f241d739e5590bf621df34f9e709552c577fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("Confab.Shared.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Confab.Shared.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
