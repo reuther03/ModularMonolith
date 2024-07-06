@@ -1,12 +1,15 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using Confab.Shared.Abstractions;
+using Confab.Shared.Abstractions.Contexts;
 using Confab.Shared.Abstractions.Modules;
 using Confab.Shared.Infrastructure.Api;
 using Confab.Shared.Infrastructure.Auth;
+using Confab.Shared.Infrastructure.Contexts;
 using Confab.Shared.Infrastructure.Exceptions;
 using Confab.Shared.Infrastructure.Modules;
 using Confab.Shared.Infrastructure.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.Extensions.Configuration;
@@ -55,8 +58,31 @@ internal static class Extensions
         {
             swagger.CustomSchemaIds(x => x.FullName);
             swagger.SwaggerDoc("v1", new OpenApiInfo { Title = "Confab API", Version = "v1" });
+
+            var securityScheme = new OpenApiSecurityScheme
+            {
+                Type = SecuritySchemeType.Http,
+                Description = "Raw JWT Bearer token",
+                Name = "JWT Authentication",
+                In = ParameterLocation.Header,
+                Scheme = JwtBearerDefaults.AuthenticationScheme,
+                BearerFormat = "JWT",
+                Reference = new OpenApiReference
+                {
+                    Id = JwtBearerDefaults.AuthenticationScheme,
+                    Type = ReferenceType.SecurityScheme
+                }
+            };
+            swagger.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, securityScheme);
+            swagger.AddSecurityRequirement(new OpenApiSecurityRequirement
+            {
+                { securityScheme, new List<string>() }
+            });
         });
 
+        services.AddTransient<IContextFactory, ContextFactory>();
+        services.AddHttpContextAccessor();
+        services.AddTransient<IContext>(sp => sp.GetRequiredService<IContextFactory>().Create());
         services.AddModuleInfo(modules);
         services.AddAuth(modules);
         services.AddErrorHandler();
