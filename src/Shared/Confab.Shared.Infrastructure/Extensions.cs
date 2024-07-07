@@ -6,6 +6,7 @@ using Confab.Shared.Abstractions.Modules;
 using Confab.Shared.Infrastructure.Api;
 using Confab.Shared.Infrastructure.Auth;
 using Confab.Shared.Infrastructure.Contexts;
+using Confab.Shared.Infrastructure.Events;
 using Confab.Shared.Infrastructure.Exceptions;
 using Confab.Shared.Infrastructure.Modules;
 using Confab.Shared.Infrastructure.Services;
@@ -86,6 +87,7 @@ internal static class Extensions
         services.AddModuleInfo(modules);
         services.AddAuth(modules);
         services.AddErrorHandler();
+        services.AddEvents(assemblies);
         services.AddSingleton<IClock, Clock>();
         services.AddHostedService<AppInitializer>();
         services.AddControllers()

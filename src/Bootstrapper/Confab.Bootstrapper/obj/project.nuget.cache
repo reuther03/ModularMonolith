@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QnIvXx/Y7DITTIBvl21TIpQ2N/21OZDxlqarlMaDfNIeZ+SM/qYEsTeqpVTaCrhQNXbUTkx1MeUml0VLybnWRA==",
+  "dgSpecHash": "/2TRsK5673X9Pn1wXHFaqw9HgS5g6N1FuyG/rNZ0VN5jLlo5B3fsTniYRs8alkFG8Q33hb/MhFRW2vhjbrpYUw==",
   "success": true,
   "projectFilePath": "C:\\Repos\\ModularMonolith\\src\\Bootstrapper\\Confab.Bootstrapper\\Confab.Bootstrapper.csproj",
   "expectedPackageFiles": [
@@ -92,6 +92,7 @@
     "C:\\Users\\micha\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\scrutor\\4.2.2\\scrutor.4.2.2.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\swashbuckle.aspnetcore.redoc\\6.6.2\\swashbuckle.aspnetcore.redoc.6.6.2.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
