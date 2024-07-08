@@ -1807,6 +1807,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Confab.Modules.Conferences.Messages": "1.0.0",
           "Confab.Shared.Infrastructure": "1.0.0"
         },
         "compile": {
@@ -1814,6 +1815,19 @@
         },
         "runtime": {
           "bin/placeholder/Confab.Modules.Conferences.Core.dll": {}
+        }
+      },
+      "Confab.Modules.Conferences.Messages/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Confab.Shared.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Confab.Modules.Conferences.Messages.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Confab.Modules.Conferences.Messages.dll": {}
         }
       },
       "Confab.Modules.Speakers.Api/1.0.0": {
@@ -1861,6 +1875,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "Confab.Modules.Conferences.Messages": "1.0.0",
           "Confab.Shared.Abstractions": "1.0.0",
           "Confab.Shared.Infrastructure": "1.0.0"
         },
@@ -4754,6 +4769,11 @@
       "type": "project",
       "path": "../../Modules/Conferences/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj",
       "msbuildProject": "../../Modules/Conferences/Confab.Modules.Conferences.Core/Confab.Modules.Conferences.Core.csproj"
+    },
+    "Confab.Modules.Conferences.Messages/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Conferences/Confab.Modules.Conferences.Messages/Confab.Modules.Conferences.Messages.csproj",
+      "msbuildProject": "../../Modules/Conferences/Confab.Modules.Conferences.Messages/Confab.Modules.Conferences.Messages.csproj"
     },
     "Confab.Modules.Speakers.Api/1.0.0": {
       "type": "project",

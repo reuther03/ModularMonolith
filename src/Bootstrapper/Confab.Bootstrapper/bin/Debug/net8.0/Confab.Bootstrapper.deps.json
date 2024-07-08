@@ -1093,6 +1093,18 @@
           }
         }
       },
+      "Scrutor/4.2.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
+          "Microsoft.Extensions.DependencyModel": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Scrutor.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.6.2": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -1255,10 +1267,19 @@
       },
       "Confab.Modules.Conferences.Core/1.0.0": {
         "dependencies": {
+          "Confab.Modules.Conferences.Messages": "1.0.0",
           "Confab.Shared.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Confab.Modules.Conferences.Core.dll": {}
+        }
+      },
+      "Confab.Modules.Conferences.Messages/1.0.0": {
+        "dependencies": {
+          "Confab.Shared.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "Confab.Modules.Conferences.Messages.dll": {}
         }
       },
       "Confab.Modules.Speakers.Api/1.0.0": {
@@ -1289,6 +1310,7 @@
       },
       "Confab.Modules.Tickets.Core/1.0.0": {
         "dependencies": {
+          "Confab.Modules.Conferences.Messages": "1.0.0",
           "Confab.Shared.Abstractions": "1.0.0",
           "Confab.Shared.Infrastructure": "1.0.0"
         },
@@ -1330,6 +1352,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.6",
           "Microsoft.AspNetCore.Authorization": "8.0.6",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
+          "Scrutor": "4.2.2",
           "Swashbuckle.AspNetCore": "6.6.2",
           "Swashbuckle.AspNetCore.ReDoc": "6.6.2",
           "Swashbuckle.AspNetCore.Swagger": "6.6.2",
@@ -1964,6 +1987,13 @@
       "path": "npgsql.entityframeworkcore.postgresql/8.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512"
     },
+    "Scrutor/4.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t5VIYA7WJXoJJo7s4DoHakMGwTu+MeEnZumMOhTCH7kz9xWha24G7dJNxWrHPlu0ZdZAS4jDZCxxAnyaBh7uYw==",
+      "path": "scrutor/4.2.2",
+      "hashPath": "scrutor.4.2.2.nupkg.sha512"
+    },
     "Swashbuckle.AspNetCore/6.6.2": {
       "type": "package",
       "serviceable": true,
@@ -2131,6 +2161,11 @@
       "sha512": ""
     },
     "Confab.Modules.Conferences.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Confab.Modules.Conferences.Messages/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
