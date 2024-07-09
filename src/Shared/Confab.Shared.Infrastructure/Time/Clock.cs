@@ -1,6 +1,6 @@
 ﻿using Confab.Shared.Abstractions;
 
-namespace Confab.Shared.Infrastructure.Services;
+namespace Confab.Shared.Infrastructure.Time;
 
 public class Clock : IClock
 {

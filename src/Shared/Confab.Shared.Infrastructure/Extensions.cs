@@ -10,6 +10,7 @@ using Confab.Shared.Infrastructure.Events;
 using Confab.Shared.Infrastructure.Exceptions;
 using Confab.Shared.Infrastructure.Modules;
 using Confab.Shared.Infrastructure.Services;
+using Confab.Shared.Infrastructure.Time;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
@@ -85,6 +86,7 @@ internal static class Extensions
         services.AddHttpContextAccessor();
         services.AddTransient<IContext>(sp => sp.GetRequiredService<IContextFactory>().Create());
         services.AddModuleInfo(modules);
+        services.AddModuleRequests(assemblies);
         services.AddAuth(modules);
         services.AddErrorHandler();
         services.AddEvents(assemblies);
