@@ -2,7 +2,7 @@
 
 namespace Confab.Shared.Infrastructure.Messaging.Dispatchers;
 
-internal interface IAsyncMessageDispatcher
+public interface IAsyncMessageDispatcher
 {
     Task PublishAsync<TMessage>(TMessage message) where TMessage : class, IMessage;
 }
