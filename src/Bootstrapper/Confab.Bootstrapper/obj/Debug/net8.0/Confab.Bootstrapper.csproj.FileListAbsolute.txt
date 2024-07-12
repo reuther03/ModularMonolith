@@ -198,3 +198,11 @@ C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\C
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Scrutor.dll
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Conferences.Messages.dll
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Conferences.Messages.pdb
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Api.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Application.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Domain.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Infrastructure.dll
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Api.pdb
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Application.pdb
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Domain.pdb
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Infrastructure.pdb

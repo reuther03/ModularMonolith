@@ -28,6 +28,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Api\\Confab.Modules.Agendas.Api.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Api\\Confab.Modules.Agendas.Api.csproj"
+              },
               "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
                 "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj"
               },
@@ -82,6 +85,245 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Api\\Confab.Modules.Agendas.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Api\\Confab.Modules.Agendas.Api.csproj",
+        "projectName": "Confab.Modules.Agendas.Api",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Api\\Confab.Modules.Agendas.Api.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Infrastructure\\Confab.Modules.Agendas.Infrastructure.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Infrastructure\\Confab.Modules.Agendas.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Application\\Confab.Modules.Agendas.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Application\\Confab.Modules.Agendas.Application.csproj",
+        "projectName": "Confab.Modules.Agendas.Application",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Application\\Confab.Modules.Agendas.Application.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Domain\\Confab.Modules.Agendas.Domain.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Domain\\Confab.Modules.Agendas.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Domain\\Confab.Modules.Agendas.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Domain\\Confab.Modules.Agendas.Domain.csproj",
+        "projectName": "Confab.Modules.Agendas.Domain",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Domain\\Confab.Modules.Agendas.Domain.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Abstractions\\Confab.Shared.Abstractions.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Abstractions\\Confab.Shared.Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Infrastructure\\Confab.Modules.Agendas.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Infrastructure\\Confab.Modules.Agendas.Infrastructure.csproj",
+        "projectName": "Confab.Modules.Agendas.Infrastructure",
+        "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Infrastructure\\Confab.Modules.Agendas.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Application\\Confab.Modules.Agendas.Application.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Application\\Confab.Modules.Agendas.Application.csproj"
+              },
+              "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj": {
+                "projectPath": "C:\\Repos\\ModularMonolith\\src\\Shared\\Confab.Shared.Infrastructure\\Confab.Shared.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

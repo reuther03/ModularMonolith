@@ -1790,6 +1790,59 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
+      "Confab.Modules.Agendas.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Confab.Modules.Agendas.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Confab.Modules.Agendas.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Confab.Modules.Agendas.Api.dll": {}
+        }
+      },
+      "Confab.Modules.Agendas.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Confab.Modules.Agendas.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Confab.Modules.Agendas.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Confab.Modules.Agendas.Application.dll": {}
+        }
+      },
+      "Confab.Modules.Agendas.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Confab.Shared.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Confab.Modules.Agendas.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Confab.Modules.Agendas.Domain.dll": {}
+        }
+      },
+      "Confab.Modules.Agendas.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Confab.Modules.Agendas.Application": "1.0.0",
+          "Confab.Shared.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Confab.Modules.Agendas.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Confab.Modules.Agendas.Infrastructure.dll": {}
+        }
+      },
       "Confab.Modules.Conferences.Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -4760,6 +4813,26 @@
         "version.txt"
       ]
     },
+    "Confab.Modules.Agendas.Api/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Agendas/Confab.Modules.Agendas.Api/Confab.Modules.Agendas.Api.csproj",
+      "msbuildProject": "../../Modules/Agendas/Confab.Modules.Agendas.Api/Confab.Modules.Agendas.Api.csproj"
+    },
+    "Confab.Modules.Agendas.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Agendas/Confab.Modules.Agendas.Application/Confab.Modules.Agendas.Application.csproj",
+      "msbuildProject": "../../Modules/Agendas/Confab.Modules.Agendas.Application/Confab.Modules.Agendas.Application.csproj"
+    },
+    "Confab.Modules.Agendas.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Agendas/Confab.Modules.Agendas.Domain/Confab.Modules.Agendas.Domain.csproj",
+      "msbuildProject": "../../Modules/Agendas/Confab.Modules.Agendas.Domain/Confab.Modules.Agendas.Domain.csproj"
+    },
+    "Confab.Modules.Agendas.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../Modules/Agendas/Confab.Modules.Agendas.Infrastructure/Confab.Modules.Agendas.Infrastructure.csproj",
+      "msbuildProject": "../../Modules/Agendas/Confab.Modules.Agendas.Infrastructure/Confab.Modules.Agendas.Infrastructure.csproj"
+    },
     "Confab.Modules.Conferences.Api/1.0.0": {
       "type": "project",
       "path": "../../Modules/Conferences/Confab.Modules.Conferences.Api/Confab.Modules.Conferences.Api.csproj",
@@ -4818,6 +4891,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Confab.Modules.Agendas.Api >= 1.0.0",
       "Confab.Modules.Conferences.Api >= 1.0.0",
       "Confab.Modules.Speakers.Api >= 1.0.0",
       "Confab.Modules.Tickets.Api >= 1.0.0",
@@ -4854,6 +4928,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Api\\Confab.Modules.Agendas.Api.csproj": {
+              "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Agendas\\Confab.Modules.Agendas.Api\\Confab.Modules.Agendas.Api.csproj"
+            },
             "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj": {
               "projectPath": "C:\\Repos\\ModularMonolith\\src\\Modules\\Conferences\\Confab.Modules.Conferences.Api\\Confab.Modules.Conferences.Api.csproj"
             },
