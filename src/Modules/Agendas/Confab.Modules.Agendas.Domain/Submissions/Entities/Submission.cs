@@ -1,4 +1,5 @@
 ﻿using Confab.Modules.Agendas.Domain.Submissions.Consts;
+using Confab.Modules.Agendas.Domain.Submissions.Events;
 using Confab.Shared.Abstractions.Exceptions;
 using Confab.Shared.Abstractions.Kernel.Types;
 
@@ -32,14 +33,23 @@ public sealed class Submission : AggregateRoot
 
     public Submission(AggregateId id, ConferenceId conferenceId)
     {
-        Id = id;
-        ConferenceId = conferenceId;
+        var submission = new Submission(id, conferenceId);
     }
 
-    public static Submission Create(AggregateId id, ConferenceId conferenceId, string title, string description, int level,
-        string status, IEnumerable<string> tags, ICollection<Speaker> speakers)
+    public static Submission Create(AggregateId id, ConferenceId conferenceId, string title, string description,
+        int level, IEnumerable<string> tags, ICollection<Speaker> speakers)
     {
         var submission = new Submission(id, conferenceId);
+        submission.ChangeTitle(title);
+        submission.ChangeDescription(description);
+        submission.ChangeLevel(level);
+        submission.Status = SubmissionStatus.Pending;
+        submission.ChangeSpeakers(speakers);
+        submission.Tags = tags;
+        submission.ClearEvents();
+        submission.Version = 0;
+
+        submission.AddEvent(new SubmissionAdded(submission));
 
         return submission;
     }
@@ -80,27 +90,31 @@ public sealed class Submission : AggregateRoot
         bool IsNotInRage() => level is < 0 or > 6;
     }
 
-    public void Approve()
+    public void ChangeSpeakers(IEnumerable<Speaker> speakers)
     {
-        if (Status is SubmissionStatus.Rejected)
+        if (speakers is null || !speakers.Any())
         {
-            throw new ConfabException("Submission is already rejected.");
+            throw new ConfabException("Speakers cannot be empty.");
         }
 
-        Status = SubmissionStatus.Approved;
+        _speakers = speakers.ToList();
         IncrementVersion();
     }
+
+    public void Approve()
+        => ChangeStatus(SubmissionStatus.Approved, SubmissionStatus.Rejected);
 
     public void Reject()
+        => ChangeStatus(SubmissionStatus.Rejected, SubmissionStatus.Approved);
+
+    private void ChangeStatus(string status, string invalidStatus)
     {
-        if (Status is SubmissionStatus.Approved)
+        if (Status == invalidStatus)
         {
-            throw new ConfabException("Submission is already approved.");
+            throw new ConfabException($"Submission is already {invalidStatus}.");
         }
 
-        Status = SubmissionStatus.Rejected;
-        IncrementVersion();
+        Status = status;
+        AddEvent(new SubmissionStatusChanged(this, status));
     }
-
-
 }
