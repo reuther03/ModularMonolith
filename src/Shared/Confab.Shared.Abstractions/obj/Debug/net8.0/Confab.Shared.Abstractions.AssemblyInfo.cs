@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Confab.Shared.Abstractions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2a68d8c9f8576cab7cb5084e853c9970dd2a449f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa831f2760a73a7ed216437a718a5315f437074e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Confab.Shared.Abstractions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Confab.Shared.Abstractions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

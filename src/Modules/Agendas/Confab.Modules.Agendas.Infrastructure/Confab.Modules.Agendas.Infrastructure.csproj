@@ -11,4 +11,8 @@
       <ProjectReference Include="..\Confab.Modules.Agendas.Application\Confab.Modules.Agendas.Application.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="EF\Configurations\" />
+    </ItemGroup>
+
 </Project>
