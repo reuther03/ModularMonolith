@@ -4,7 +4,7 @@ namespace Confab.Modules.Agendas.Api.Controllers;
 
 [ApiController]
 [Route(AgendasModule.BasePath + "/[controller]")]
-public class BaseController : ControllerBase
+internal class BaseController : ControllerBase
 {
 
 }
