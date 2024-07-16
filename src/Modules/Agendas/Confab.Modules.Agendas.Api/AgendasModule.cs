@@ -7,12 +7,13 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Confab.Modules.Agendas.Api;
 
-public class AgendasModule : IModule
+internal class AgendasModule : IModule
 {
     public const string BasePath = "agendas-module";
 
-    public string Name { get; } = "agendas";
+    public string Name { get; } = "Agendas";
     public string Path => BasePath;
+
     public void Register(IServiceCollection services)
     {
         services
@@ -23,6 +24,5 @@ public class AgendasModule : IModule
 
     public void Use(IApplicationBuilder app)
     {
-
     }
 }

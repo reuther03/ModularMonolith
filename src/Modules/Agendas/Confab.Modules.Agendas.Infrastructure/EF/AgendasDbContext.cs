@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Confab.Modules.Agendas.Infrastructure.EF;
 
-internal sealed class AgendasDbContext : DbContext
+internal class AgendasDbContext : DbContext
 {
     public DbSet<Submission> Submissions { get; set; }
     public DbSet<Speaker> Speakers { get; set; }

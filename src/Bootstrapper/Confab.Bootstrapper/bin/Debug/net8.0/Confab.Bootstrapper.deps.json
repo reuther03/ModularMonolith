@@ -1284,7 +1284,8 @@
       },
       "Confab.Modules.Agendas.Infrastructure/1.0.0": {
         "dependencies": {
-          "Confab.Modules.Agendas.Application": "1.0.0"
+          "Confab.Modules.Agendas.Application": "1.0.0",
+          "Confab.Shared.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Confab.Modules.Agendas.Infrastructure.dll": {}

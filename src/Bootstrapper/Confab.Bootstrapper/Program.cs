@@ -15,6 +15,11 @@ var modules = ModuleLoader.LoadModules(assemblies);
 
 services.AddInfrastructure(assemblies, modules);
 
+var serviceProvider = services.BuildServiceProvider();
+using var scope = serviceProvider.CreateScope();
+var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+
+logger.LogInformation("Modules loaded: {Modules}", modules.Select(x => x.Name));
 foreach (var module in modules)
 {
     module.Register(services);
@@ -32,4 +37,4 @@ foreach (var module in modules)
 app.MapModuleInfo();
 app.MapControllers();
 
-app.Run();
+await app.RunAsync();

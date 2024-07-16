@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Confab.Modules.Agendas.Infrastructure.EF.Configurations;
 
-internal class SubmissionConfiguration : IEntityTypeConfiguration<Submission>
+public class SubmissionConfiguration : IEntityTypeConfiguration<Submission>
 {
     public void Configure(EntityTypeBuilder<Submission> builder)
     {
@@ -23,10 +23,10 @@ internal class SubmissionConfiguration : IEntityTypeConfiguration<Submission>
         builder.Property(x => x.Version)
             .IsConcurrencyToken();
 
-        builder.Property(x => x.Tags).Metadata.SetValueComparer(
-            new ValueComparer<IEnumerable<string>>(
-                (c1, c2) => c1.SequenceEqual(c2),
-                c => c.Aggregate(0, (a, next) => HashCode.Combine(a, next.GetHashCode())),
-                c => c.ToArray()));
+        builder
+            .Property(x => x.Tags).Metadata.SetValueComparer(
+                new ValueComparer<IEnumerable<string>>(
+                    (c1, c2) => c1.SequenceEqual(c2),
+                    c => c.Aggregate(0, (a, next) => HashCode.Combine(a, next.GetHashCode()))));
     }
 }

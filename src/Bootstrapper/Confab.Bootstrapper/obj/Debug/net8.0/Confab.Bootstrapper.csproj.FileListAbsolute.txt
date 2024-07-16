@@ -206,3 +206,4 @@ C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\C
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Application.pdb
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Domain.pdb
 C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\Confab.Modules.Agendas.Infrastructure.pdb
+C:\Repos\ModularMonolith\src\Bootstrapper\Confab.Bootstrapper\bin\Debug\net8.0\module.agendas.json
